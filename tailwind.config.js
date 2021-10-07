@@ -1,11 +1,90 @@
 module.exports = {
-  purge: { content: ['./public/**/*.html', './src/**/*.vue'] },
+  purge: { content: ["./public/**/*.html", "./src/**/*.vue"] },
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    colors: {
+      "dark-backdrop": "rgba(0, 0, 0, 0.75)",
+      "bright-black": "#2e2d2d",
+      "indigo-dark": "#282c34",
+      "indigo-bright": "#b13548",
+      "dark-grey": "rgb(31, 31, 31)",
+      "bright-grey": "rgb(163, 163, 163)",
+      "dark-red": "rgb(185, 28, 28)",
+      "orange-active": "#e8871e",
+      "antique-red": "#8B2635",
+      "dark-blue": "#142649",
+      transparent: "transparent",
+      white: "#fff",
+      black: "#000",
+    },
+    borderRadius: {
+      xl: "0.75rem",
+      "50px": "50px",
+      full: "50%",
+      "12px": "12px",
+      "30px": "30px",
+      "24px": "24px",
+    },
+    boxShadow: {
+      "card-shadow": "0 2px 8px rgba(0, 0, 0, 0.26)",
+      "auth-shadow": "2px 2px 8px rgba(146, 146, 146, 0.541)",
+    },
+    inset: {
+      "0": 0,
+      // ...
+      "64": "16rem",
+      "1/2": "50%",
+      "3": "0.8rem",
+      "4": "1rem",
+      "1/5": "20%",
+      "1/10": "10%",
+      "30vh": "30vh",
+      "calc-center": "calc(50% - 20rem)",
+    },
+    extend: {
+      height: {
+        "10v": "10vh",
+        "20v": "20vh",
+        "30v": "30vh",
+        "40v": "40vh",
+        "50v": "50vh",
+        "60v": "60vh",
+        "70v": "70vh",
+        "80v": "80vh",
+        "90v": "90vh",
+        "100v": "100vh",
+        "9.375r": "9.375rem",
+        "50px": "50px",
+      },
+      width: {
+        "9.375r": "9.375rem",
+        "50px": "50px",
+        "250px": "250px",
+        "300px": "300px",
+        "400px": "400px",
+        "40r": "40rem",
+      },
+      margin: {
+        "-16.7": "-4.688rem",
+      },
+      padding: {
+        "10px": "10px",
+        "14px": "14px",
+        "20px": "20px",
+        "15px": "15px",
+        "35px": "35px",
+        "40px": "40px",
+      },
+      maxHeight: {
+        "88px": "88px",
+      },
+    },
   },
   variants: {
-    extend: {},
+    extend: {
+      textColor: ["active", "hover"],
+      width: ["focus"],
+    },
   },
   plugins: [],
-}
+};

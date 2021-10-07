@@ -1,7 +1,26 @@
-<template> <div class="bg-red-500">Hello world</div> </template>
+<template>
+  <TheHeader />
+  <router-view />
+</template>
 
 <script>
-export default {};
+import TheHeader from "./components/layout/TheHeader.vue";
+export default {
+  components: { TheHeader },
+  computed: {
+    didAutoLogout() {
+      return this.$store.getters.didAutoLogout;
+    },
+  },
+  watch: {
+    didAutoLogout(curVal, oldVal) {
+      if (curVal && curVal !== oldVal) {
+        this.$router.replace("/auth");
+      }
+    },
+  },
+  created() {
+    this.$store.dispatch("tryLogin");
+  },
+};
 </script>
-
-<style></style>
