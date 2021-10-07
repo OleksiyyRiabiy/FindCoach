@@ -19,11 +19,11 @@ module.exports = {
     },
     borderRadius: {
       xl: "0.75rem",
+      "12px": "12px",
+      "24px": "24px",
+      "30px": "30px",
       "50px": "50px",
       full: "50%",
-      "12px": "12px",
-      "30px": "30px",
-      "24px": "24px",
     },
     boxShadow: {
       "card-shadow": "0 2px 8px rgba(0, 0, 0, 0.26)",
@@ -32,12 +32,12 @@ module.exports = {
     inset: {
       "0": 0,
       // ...
-      "64": "16rem",
-      "1/2": "50%",
       "3": "0.8rem",
       "4": "1rem",
-      "1/5": "20%",
+      "64": "16rem",
       "1/10": "10%",
+      "1/5": "20%",
+      "1/2": "50%",
       "30vh": "30vh",
       "calc-center": "calc(50% - 20rem)",
     },
@@ -70,8 +70,8 @@ module.exports = {
       padding: {
         "10px": "10px",
         "14px": "14px",
-        "20px": "20px",
         "15px": "15px",
+        "20px": "20px",
         "35px": "35px",
         "40px": "40px",
       },
